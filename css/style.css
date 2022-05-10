@@ -1,0 +1,352 @@
+:root {
+    --color_primario: rgb(0, 0, 0);
+    --color_secundario: #ffffff;
+    --color_terciario: rgb(236, 235, 232);
+    --color_cuarto: rgb(130, 130, 130);
+    --type: 'verdana';
+}
+
+* {
+    margin: 0em; 
+    padding: 0em; 
+    box-sizing: border-box; 
+
+    text-decoration: none;                                                                     font-family: 'Gotham', sans-serif;
+    font-family: 'Gotham Black', sans-serif;
+    font-family: 'Gotham Light', sans-serif;
+    font-family: 'Gotham Thin', sans-serif;
+    font-family: 'Gotham XLight', sans-serif;
+    font-family: 'Gotham Book', sans-serif;
+    font-family: 'Gotham Ultra', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Aquí comienza el header*/
+
+header{
+    background-color: var(--color_primario) ;
+}
+
+.logo{
+    width: 26em;
+    padding: 0em 7em 0em 9em;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 1.5em;
+    font-size: 1em;
+    color: var(--color_secundario);
+}
+.menu a{
+    color: var(--color_secundario);
+    font-family: var(--type);
+    font-weight: 36em;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/*Section 1 contenedores marca*/
+
+.secciones_marca{
+    display: flex;
+}
+
+.secciones_marca .parte_1{
+    display: flex;
+}
+
+.logo_1{
+    width: 18em
+}
+
+
+/* Sección 2 nuestro_logotipo*/
+
+.incorrectos {
+    gap: 1em;
+}
+
+.nuestrologotipo .colores_de_marca{
+    width: 80%;
+    margin: auto;
+    padding-top: 1.3em;
+    padding-bottom: 9em;
+    font-size: 1.3em;
+    flex-direction: column;
+    font-family: var(--type)
+}
+.nuestrologotipo .titulo{
+
+    color: var(--color_secundario);
+    margin-bottom: 3.2em; 
+    flex-wrap: wrap;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--color_secundario);
+    justify-content: space-between
+}
+
+.logos .imagen_1 {
+    background-color: var(--color_cuarto);
+    padding: 1.3em 6em;
+    padding-top: 9em;
+    border-radius: .5em;
+}
+
+.logos .imagen_2{
+    background-color: var(--color_cuarto);
+    padding: 1.3em 6em;
+    padding-top: 9em;
+    border-radius: .5em;
+}
+
+.logos .imagen_3{
+    background-color: var(--color_cuarto);
+    padding: 1.3em 8em;
+    padding-top: 9em;
+    border-radius: .5em;
+}
+
+
+
+/*Footer*/
+
+.contenedor{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    padding: 0em 1em 6.5em 0em;
+}
+.contenedor a{
+    color: #000000;
+    font-family: var(--type);
+}
+
+.contenido{
+    padding-right: 4em;
+}
+
+.web{
+    font-size: 1.7em;
+}
+.web a{
+    text-decoration: none;
+}
+.web li{
+    list-style: none;
+    padding: 1.3em 1em 1.3em .3em;
+}
+.web ul li{
+    display: inline; 
+}
+
+
+.tema_1 ul li{
+    margin-bottom: 1.3em;
+}
+
+
+.tema_2 ul li{
+    margin-bottom: 1.3em;
+
+}
+
+.tema_3 ul li{
+    margin-bottom: 1.3em;
+}
+
+.tema_4 ul li{
+    margin-bottom: 1.3em;
+}
+
+.tema_5 ul li{
+    margin-bottom: 1.3em;
+}
+
+
+
+h2{
+    font-size: 3em;
+    padding-bottom: 1.3em;
+    font-weight: 5em;
+    color: rgb(30, 215, 96);
+    margin-right: 200px;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 36em;
+    color: rgb(224, 34, 34);
+    margin-bottom: 3em;
+}
+
+h5{
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(30, 215, 96);
+    padding-bottom: 1em;
+
+}
+
+p{
+    font-size: 1.3em;
+    font-family: var(--type);
+    font-weight: 15em;
+    margin-bottom: 1.3em;
+    margin-right: 3em;
+}
+
+.bodycon {
+    background-color: var(--color_terciario);
+}
+
+.footcon {
+    background-color: var(--color_cuarto);
+}
+
+.incorrectos {
+    display: flex;
+}
+
+ 
+
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+ @media (min-width: 768px) and (max-width: 1024px)  
+ {
+     .encabezado {
+        flex-direction: column;
+        padding-bottom: 1em;
+     }
+
+     .encabezado .logo {
+         width: 90%;
+     }
+
+     .menu{
+         font-size: 1.1em;
+     }
+
+     .container {
+        flex-direction:column;
+        padding: 0px
+     }
+
+     .incorrectos {
+        flex-direction:column;
+        width: 80%;
+     }
+
+     .contenedor {
+         flex-direction: column;
+         gap: 1em;
+     }
+
+     .web {
+         font-size: 2.5em;
+         padding-bottom: 1em;
+         padding-top: .1em;
+     }
+
+}
+
+
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) 
+{
+
+    .encabezado {
+        flex-direction: column;
+        padding-bottom: 1em;
+     }
+
+     .encabezado .logo {
+        width: 90%;
+    }
+
+    .menu ul li{
+        font-size: 1em;
+    }
+
+
+    .container {
+       flex-direction:column;
+       padding: 0px
+    }
+
+    .incorrectos {
+       flex-direction:column;
+       width: 80%;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .web {
+        font-size: 2em;
+        padding-bottom: 1em;
+        padding-top: .1em;
+    }
+
+}
+
+
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) 
+{
+    .encabezado {
+        flex-direction: column;
+        padding-bottom: 1em;
+     }
+
+    .menu ul li{
+        font-size: .6em;
+        justify-content: space-between;
+    }
+
+
+    .container {
+       flex-direction:column;
+       padding: 0px
+    }
+
+    .incorrectos {
+       flex-direction:column;
+       width: 80%;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .web {
+        font-size: 2em;
+        padding-bottom: 1em;
+        padding-top: .1em;
+    }
+
+
+}
